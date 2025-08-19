@@ -3,7 +3,7 @@
         'name' => 'mypreview/woo-additional-terms',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '05e7654db4d8cdc2e6540a04b1438c1a29586fda',
+        'reference' => 'da4ea4d935757f77e5721cee6f0bd7a9a7fa5e58',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -31,7 +31,7 @@
         'mypreview/woo-additional-terms' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '05e7654db4d8cdc2e6540a04b1438c1a29586fda',
+            'reference' => 'da4ea4d935757f77e5721cee6f0bd7a9a7fa5e58',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
