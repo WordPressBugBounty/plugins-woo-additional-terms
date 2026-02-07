@@ -56,14 +56,25 @@ class Checkout {
 				'schema_type'     => ARRAY_A,
 				'schema_callback' => fn() => array(
 					'data' => array(
+						'description' => __( 'Whether additional terms were accepted.', 'woo-additional-terms' ),
 						'type'        => 'string',
 						'context'     => array( 'view', 'edit' ),
 						'arg_options' => array(
 							'validate_callback' => function( $value ) {
-
 								if ( ! is_string( $value ) ) {
-									/* translators: %s: Render the type of the variable. */
-									return new WP_Error( 'api-error', sprintf( esc_html__( 'Value of field %s was posted with incorrect data type.', 'woo-additional-terms' ), gettype( $value ) ) );
+									return new WP_Error(
+										'api-error',
+										__( 'Invalid value type for additional terms.', 'woo-additional-terms' )
+									);
+								}
+
+								$allowed = array( 'yes', 'no', '1', '0', 'true', 'false', '' );
+
+								if ( ! in_array( strtolower( $value ), $allowed, true ) ) {
+									return new WP_Error(
+										'api-error',
+										__( 'Invalid value for additional terms.', 'woo-additional-terms' )
+									);
 								}
 
 								return true;
@@ -92,7 +103,13 @@ class Checkout {
 			return;
 		}
 
-		$has_accepted = empty( $request['extensions'][ Block::NAME ]['data'] ) ? null : wc_string_to_bool( $request['extensions'][ Block::NAME ]['data'] );
+		$raw = $request['extensions'][ Block::NAME ]['data'] ?? null;
+
+		if ( null === $raw || '' === $raw ) {
+			$has_accepted = null;
+		} else {
+			$has_accepted = wc_string_to_bool( $raw );
+		}
 
 		/**
 		 * Fires after additional terms submissions is about to be saved.
@@ -130,6 +147,7 @@ class Checkout {
 		$order->add_order_note( $note_message );
 
 		// Save the additional terms checkbox value as order meta.
-		update_post_meta( $order->get_id(), Admin\Order::META_KEY, wc_bool_to_string( $has_accepted ) );
+		$order->update_meta_data( Admin\Order::META_KEY, wc_bool_to_string( $has_accepted ) );
+		$order->save();
 	}
 }

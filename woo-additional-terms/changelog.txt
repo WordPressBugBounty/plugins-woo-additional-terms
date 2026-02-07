@@ -1,4 +1,9 @@
 *** Additional Terms for WooCommerce Changelog ***
+= 2026-02-07 1.7.1 =
+* Fix - Improved compatibility with WooCommerce HPOS for order metadata storage.
+* Update - Compatibility with WP 6.9.
+* Update - Compatibility with WC 10.5.
+
 = 2025-08-19 1.7.0 =
 * Fix – Added support for translating settings fields
 
