@@ -16,23 +16,35 @@ defined( 'WC_VERSION' ) || exit;
 	<h2 class="woo-additional-terms-get-pro-title">
 		<?php echo esc_html_x( 'Additional Terms Pro', 'upsell', 'woo-additional-terms' ); ?>
 	</h2>
+	<p class="woo-additional-terms-get-pro-subtitle">
+		<?php echo esc_html_x( 'Need Multiple Terms Checkboxes?', 'upsell', 'woo-additional-terms' ); ?>
+	</p>
 	<ul class="woo-additional-terms-get-pro-features">
 		<li>
-			<?php echo esc_html_x( 'Unlimited T&C checkboxes', 'upsell', 'woo-additional-terms' ); ?>
+			<?php echo esc_html_x( 'Unlimited terms checkboxes', 'upsell', 'woo-additional-terms' ); ?>
 		</li>
 		<li>
-			<?php echo esc_html_x( 'Define smart conditions', 'upsell', 'woo-additional-terms' ); ?>
+			<?php echo esc_html_x( 'Payment gateway rules', 'upsell', 'woo-additional-terms' ); ?>
 		</li>
 		<li>
-			<?php echo esc_html_x( 'Acceptance summary', 'upsell', 'woo-additional-terms' ); ?>
+			<?php echo esc_html_x( 'Smart conditional display', 'upsell', 'woo-additional-terms' ); ?>
 		</li>
 		<li>
-			<?php echo esc_html_x( '24/7 priority support', 'upsell', 'woo-additional-terms' ); ?>
+			<?php echo esc_html_x( 'Accepted terms in emails', 'upsell', 'woo-additional-terms' ); ?>
+		</li>
+		<li>
+			<?php echo esc_html_x( 'PDF terms receipts', 'upsell', 'woo-additional-terms' ); ?>
+		</li>
+		<li>
+			<?php echo esc_html_x( 'Import/export settings', 'upsell', 'woo-additional-terms' ); ?>
+		</li>
+		<li>
+			<?php echo esc_html_x( 'Terms Generator included', 'upsell', 'woo-additional-terms' ); ?>
 		</li>
 	</ul>
 	<p class="woo-additional-terms-get-pro-cta">
 		<a href="<?php echo esc_url( $args['uri'] ); ?>" target="_blank" rel="noopener noreferrer nofollow">
-			<?php echo esc_html_x( 'Go PRO for More Options', 'upsell', 'woo-additional-terms' ); ?>
+			<?php echo esc_html_x( 'Upgrade to Pro', 'upsell', 'woo-additional-terms' ); ?>
 		</a>
 	</p>
 	<div class="woo-additional-terms-get-pro-rate">
