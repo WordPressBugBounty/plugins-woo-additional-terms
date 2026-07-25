@@ -18,28 +18,28 @@
  *
  * @package woo-additional-terms
  *
- * @copyright © 2015 - 2024 MyPreview. All Rights Reserved.
+ * @copyright © 2015 - 2026 MyPreview. All Rights Reserved.
  *
  * @wordpress-plugin
- * Plugin Name: Woo Additional Terms
- * Plugin URI: https://mypreview.one/woo-additional-terms
+ * Plugin Name: Additional Terms Lite for WooCommerce
+ * Plugin URI: https://mypreview.one/additional-terms-pro-for-woocommerce/
  * Description: Improve your checkout process by adding an extra checkbox for terms and conditions. Keep track of acceptance to ensure transparency and security.
- * Version: 1.7.2
+ * Version: 1.7.2.1
  * Author: MyPreview
- * Author URI: https://mypreview.one/woo-additional-terms
- * Requires at least: 5.9
+ * Author URI: https://mypreview.one
+ * Requires at least: 6.5
  * Requires PHP: 7.4
+ * Requires Plugins: woocommerce
  * License: GPL-3.0
  * License URI: http://www.gnu.org/licenses/gpl-3.0.txt
  * Text Domain: woo-additional-terms
  * Domain Path: /languages
  *
  * WC requires at least: 5.5
- * WC tested up to: 10.8
+ * WC tested up to: 10.9
  */
 
 use Woo_Additional_Terms\Plugin;
-use WC_Install_Notice\Nag;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	header( 'Status: 403 Forbidden' );
@@ -84,17 +84,9 @@ function woo_additional_terms_load() {
 	woo_additional_terms();
 }
 
-if ( ! (
-		( new Nag() )
-		->set_file_path( __FILE__ )
-		->set_plugin_name( 'Additional Terms for WooCommerce' )
-		->does_it_requires_nag()
-	)
-) {
 
-	add_action( 'woocommerce_loaded', 'woo_additional_terms_load', 20 );
+add_action( 'woocommerce_loaded', 'woo_additional_terms_load', 20 );
 
-	// Register activation and deactivation hooks.
-	register_activation_hook( __FILE__, array( 'Woo_Additional_Terms\\Installer', 'activate' ) );
-	register_deactivation_hook( __FILE__, array( 'Woo_Additional_Terms\\Installer', 'deactivate' ) );
-}
+// Register activation and deactivation hooks.
+register_activation_hook( __FILE__, array( 'Woo_Additional_Terms\\Installer', 'activate' ) );
+register_deactivation_hook( __FILE__, array( 'Woo_Additional_Terms\\Installer', 'deactivate' ) );

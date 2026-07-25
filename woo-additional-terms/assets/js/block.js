@@ -99,7 +99,7 @@
 								),
 								el(
 									ExternalLink,
-									{ href: 'https://mypreview.github.io/woo-additional-terms' },
+									{ href: 'https://mypreview.one/docs/woo-additional-terms' },
 									__( 'Visit our tutorial for full details.', 'woo-additional-terms' )
 								)
 							)

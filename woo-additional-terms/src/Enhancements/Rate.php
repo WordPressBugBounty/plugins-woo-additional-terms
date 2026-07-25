@@ -9,7 +9,6 @@
 
 namespace Woo_Additional_Terms\Enhancements;
 
-use WP_Footer_Rate;
 use Woo_Additional_Terms\Helper;
 
 /**
@@ -46,7 +45,6 @@ class Rate {
 	public function setup() {
 
 		add_action( 'woo_additional_terms_admin_notices', array( $this, 'admin_notice' ) );
-		add_action( 'woocommerce_settings_start', array( $this, 'wp_footer' ) );
 	}
 
 	/**
@@ -91,23 +89,6 @@ class Rate {
 			array(
 				'usage_timestamp' => human_time_diff( $usage_timestamp ),
 			)
-		);
-	}
-
-	/**
-	 * Ask for a review in the footer of the settings page.
-	 *
-	 * @since 1.6.0
-	 *
-	 * @return void
-	 */
-	public function wp_footer() {
-
-		new WP_Footer_Rate\Rate(
-			woo_additional_terms()->service( 'file' )->plugin_basename(),
-			woo_additional_terms()->get_slug(),
-			_x( 'Additional Terms for WooCommerce', 'plugin name', 'woo-additional-terms' ),
-			Helper\Settings::is_page()
 		);
 	}
 }

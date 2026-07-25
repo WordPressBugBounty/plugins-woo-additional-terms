@@ -95,7 +95,7 @@ class General extends Section {
 			'smart_tag_info' => array(
 				'type' => 'info',
 				'text' => sprintf( /* translators: 1: Open paragraph tag, 2: Terms smart tag, 3: Close paragraph tag. */
-					esc_html_x( '%1$sUse the %2$s smart tag in the Terms Text to automatically display the linked terms page title in your checkbox label.%3$s', 'settings field description', 'woo-additional-terms' ),
+					esc_html_x( '%1$sUse %2$s to insert the linked terms page title into the checkbox label.%3$s', 'settings field description', 'woo-additional-terms' ),
 					'<p class="description">',
 					'<code>{{additional-terms}}</code>',
 					'</p>'
@@ -103,7 +103,7 @@ class General extends Section {
 			),
 			'required' => array(
 				'name'     => _x( 'Required', 'settings field name', 'woo-additional-terms' ),
-				'desc'     => _x( 'Enable this to make the additional terms checkbox required.', 'settings field description', 'woo-additional-terms' ),
+				'desc'     => _x( 'Require customers to check this box before placing an order.', 'settings field description', 'woo-additional-terms' ),
 				'type'     => 'checkbox',
 				'id'       => 'woo_additional_terms_options[required]',
 				'default'  => 'yes',

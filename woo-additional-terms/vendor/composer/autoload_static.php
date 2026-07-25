@@ -22,8 +22,6 @@ class ComposerStaticInit32c74950ef901cb5fe54dde74dba7fde
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'WC_Install_Notice\\Nag' => __DIR__ . '/..' . '/mahdiyazdani/wc-install-notice/src/wc-install-notice.php',
-        'WP_Footer_Rate\\Rate' => __DIR__ . '/..' . '/mahdiyazdani/wp-footer-rate/src/wp-footer-rate.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

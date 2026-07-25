@@ -36,7 +36,7 @@ defined( 'WC_VERSION' ) || exit;
 			<?php echo esc_html_x( 'PDF terms receipts', 'upsell', 'woo-additional-terms' ); ?>
 		</li>
 		<li>
-			<?php echo esc_html_x( 'Import/export settings', 'upsell', 'woo-additional-terms' ); ?>
+			<?php echo esc_html_x( 'Detailed CSV exports', 'upsell', 'woo-additional-terms' ); ?>
 		</li>
 		<li>
 			<?php echo esc_html_x( 'Terms Generator included', 'upsell', 'woo-additional-terms' ); ?>
@@ -48,7 +48,7 @@ defined( 'WC_VERSION' ) || exit;
 		</a>
 	</p>
 	<div class="woo-additional-terms-get-pro-rate">
-		<a href="https://wordpress.org/support/plugin/woo-additional-terms/reviews?filter=5" target="_blank" rel="noopener noreferrer nofollow">
+		<a href="<?php echo esc_url( $args['uri'] ); ?>#reviews" target="_blank" rel="noopener noreferrer nofollow">
 			<strong>
 				<?php echo esc_html_x( 'Read reviews from real users', 'upsell', 'woo-additional-terms' ); ?>
 			</strong>

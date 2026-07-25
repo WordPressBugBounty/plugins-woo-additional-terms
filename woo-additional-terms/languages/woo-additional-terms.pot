@@ -1,26 +1,25 @@
-# Copyright (C) 2024 MyPreview
+# Copyright (C) 2026 MyPreview
 # This file is distributed under the GPL-3.0.
 msgid ""
 msgstr ""
-"Project-Id-Version: Woo Additional Terms 1.6.8.1\n"
+"Project-Id-Version: Additional Terms Lite for WooCommerce 1.7.2.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woo-additional-terms\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-09-09T09:01:58+00:00\n"
+"POT-Creation-Date: 2026-07-25T11:34:30+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.8.1\n"
+"X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: woo-additional-terms\n"
 
 #. Plugin Name of the plugin
-msgid "Woo Additional Terms"
+msgid "Additional Terms Lite for WooCommerce"
 msgstr ""
 
 #. Plugin URI of the plugin
-#. Author URI of the plugin
-msgid "https://mypreview.one/woo-additional-terms"
+msgid "https://mypreview.one/additional-terms-pro-for-woocommerce/"
 msgstr ""
 
 #. Description of the plugin
@@ -29,6 +28,10 @@ msgstr ""
 
 #. Author of the plugin
 msgid "MyPreview"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://mypreview.one"
 msgstr ""
 
 #. translators: 1: Open anchor tag, 2: Close anchor tag.
@@ -46,20 +49,13 @@ msgstr ""
 #. translators: 1: Open anchor tag, 2: Close anchor tag.
 #: src/Enhancements/Meta.php:91
 msgctxt "plugin link"
-msgid "%1$sGet PRO%2$s"
+msgid "%1$sUpgrade to Pro%2$s"
 msgstr ""
 
 #. translators: 1: Open anchor tag, 2: Close anchor tag.
 #: src/Enhancements/Meta.php:101
 msgctxt "plugin settings page"
 msgid "%1$sSettings%2$s"
-msgstr ""
-
-#: src/Enhancements/Rate.php:109
-#: templates/notices/onboarding.php:24
-#: templates/notices/rate.php:23
-msgctxt "plugin name"
-msgid "Additional Terms for WooCommerce"
 msgstr ""
 
 #: src/Settings/Sections/General.php:32
@@ -150,7 +146,7 @@ msgstr ""
 #. translators: 1: Open paragraph tag, 2: Terms smart tag, 3: Close paragraph tag.
 #: src/Settings/Sections/General.php:98
 msgctxt "settings field description"
-msgid "%1$sUse the %2$s smart tag in the Terms Text to automatically display the linked terms page title in your checkbox label.%3$s"
+msgid "%1$sUse %2$s to insert the linked terms page title into the checkbox label.%3$s"
 msgstr ""
 
 #: src/Settings/Sections/General.php:105
@@ -160,7 +156,7 @@ msgstr ""
 
 #: src/Settings/Sections/General.php:106
 msgctxt "settings field description"
-msgid "Enable this to make the additional terms checkbox required."
+msgid "Require customers to check this box before placing an order."
 msgstr ""
 
 #: src/Settings/Sections/General.php:112
@@ -193,16 +189,23 @@ msgctxt "settings tab"
 msgid "General"
 msgstr ""
 
-#. translators: %s: Render the type of the variable.
-#: src/WooCommerce/Block/Checkout.php:66
-msgid "Value of field %s was posted with incorrect data type."
+#: src/WooCommerce/Block/Checkout.php:59
+msgid "Whether additional terms were accepted."
 msgstr ""
 
-#: src/WooCommerce/Block/Checkout.php:127
+#: src/WooCommerce/Block/Checkout.php:67
+msgid "Invalid value type for additional terms."
+msgstr ""
+
+#: src/WooCommerce/Block/Checkout.php:76
+msgid "Invalid value for additional terms."
+msgstr ""
+
+#: src/WooCommerce/Block/Checkout.php:144
 msgid "Customer accepted the additional terms."
 msgstr ""
 
-#: src/WooCommerce/Block/Checkout.php:128
+#: src/WooCommerce/Block/Checkout.php:145
 msgid "Customer did not accept the additional terms."
 msgstr ""
 
@@ -218,6 +221,12 @@ msgstr ""
 #: templates/notices/onboarding.php:21
 msgctxt "admin notice"
 msgid "Thanks for installing %1$s plugin! To get started, visit the %2$sdocumentation%3$s or %4$splugin’s settings page%5$s."
+msgstr ""
+
+#: templates/notices/onboarding.php:24
+#: templates/notices/rate.php:23
+msgctxt "plugin name"
+msgid "Additional Terms for WooCommerce"
 msgstr ""
 
 #. translators: 1: Activation duration, 2: Plugin name
@@ -252,17 +261,17 @@ msgstr ""
 
 #: templates/sidebar/docs.php:16
 msgctxt "upsell"
-msgid "Learn Settings"
+msgid "New to Additional Terms?"
 msgstr ""
 
 #: templates/sidebar/docs.php:19
 msgctxt "upsell"
-msgid "Click on the link below to explore a wealth of information about the plugin’s settings, including step-by-step tutorials, configuration options, and troubleshooting guides. Everything you need to harness the full potential of the plugin is just a click away!"
+msgid "Step-by-step setup, a reference for every setting, and fixes for common issues."
 msgstr ""
 
 #: templates/sidebar/docs.php:23
 msgctxt "upsell"
-msgid "Visit the documentation"
+msgid "Read the documentation"
 msgstr ""
 
 #: templates/sidebar/upsell.php:17
@@ -270,32 +279,52 @@ msgctxt "upsell"
 msgid "Additional Terms Pro"
 msgstr ""
 
-#: templates/sidebar/upsell.php:21
+#: templates/sidebar/upsell.php:20
 msgctxt "upsell"
-msgid "Unlimited T&C checkboxes"
+msgid "Need Multiple Terms Checkboxes?"
 msgstr ""
 
 #: templates/sidebar/upsell.php:24
 msgctxt "upsell"
-msgid "Define smart conditions"
+msgid "Unlimited terms checkboxes"
 msgstr ""
 
 #: templates/sidebar/upsell.php:27
 msgctxt "upsell"
-msgid "Acceptance summary"
+msgid "Payment gateway rules"
 msgstr ""
 
 #: templates/sidebar/upsell.php:30
 msgctxt "upsell"
-msgid "24/7 priority support"
+msgid "Smart conditional display"
 msgstr ""
 
-#: templates/sidebar/upsell.php:35
+#: templates/sidebar/upsell.php:33
 msgctxt "upsell"
-msgid "Go PRO for More Options"
+msgid "Accepted terms in emails"
 msgstr ""
 
-#: templates/sidebar/upsell.php:41
+#: templates/sidebar/upsell.php:36
+msgctxt "upsell"
+msgid "PDF terms receipts"
+msgstr ""
+
+#: templates/sidebar/upsell.php:39
+msgctxt "upsell"
+msgid "Detailed CSV exports"
+msgstr ""
+
+#: templates/sidebar/upsell.php:42
+msgctxt "upsell"
+msgid "Terms Generator included"
+msgstr ""
+
+#: templates/sidebar/upsell.php:47
+msgctxt "upsell"
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: templates/sidebar/upsell.php:53
 msgctxt "upsell"
 msgid "Read reviews from real users"
 msgstr ""

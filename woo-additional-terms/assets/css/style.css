@@ -3,9 +3,9 @@
 }
 
 .wc-block-checkout .woo-additional-terms {
-    font-size: var(--wp--preset--font-size--small, 14px);
-    line-height: 20px;
-    margin: 0 0 24px;
+	font-size: var(--wp--preset--font-size--small, 14px);
+	line-height: 20px;
+	margin: 0 0 24px;
 }
 
 .woo-additional-terms__content--embed {
