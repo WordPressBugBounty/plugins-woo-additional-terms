@@ -24,7 +24,7 @@
  * Plugin Name: Additional Terms Lite for WooCommerce
  * Plugin URI: https://mypreview.one/additional-terms-pro-for-woocommerce/
  * Description: Improve your checkout process by adding an extra checkbox for terms and conditions. Keep track of acceptance to ensure transparency and security.
- * Version: 1.7.2.1
+ * Version: 1.7.3
  * Author: MyPreview
  * Author URI: https://mypreview.one
  * Requires at least: 6.5
@@ -36,7 +36,7 @@
  * Domain Path: /languages
  *
  * WC requires at least: 5.5
- * WC tested up to: 10.9
+ * WC tested up to: 11.1
  */
 
 use Woo_Additional_Terms\Plugin;

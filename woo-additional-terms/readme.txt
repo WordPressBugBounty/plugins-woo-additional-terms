@@ -3,9 +3,9 @@ Contributors: mypreview
 Tags: woocommerce, terms and conditions, checkout, consent, gdpr
 Donate link: https://mypreview.one/additional-terms-pro-for-woocommerce/
 Requires at least: 6.5
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.7.2.1
+Stable tag: 1.7.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -69,7 +69,7 @@ The plugin is translation-ready and includes configuration support for multiling
 
 ## Need more control? Upgrade to Additional Terms Pro
 
-The free plugin handles a single agreement well. Additional Terms Pro is built for stores that need more than one policy, want the right terms to appear at the right moment, and need records that hold up.
+The free plugin handles a single agreement well. Additional Terms Pro is built for stores that need more than one policy, want the right terms to appear at the right moment, need to add fees to agreements, and want records that hold up.
 
 [Upgrade to Additional Terms Pro](https://mypreview.one/additional-terms-pro-for-woocommerce/ "Additional Terms Pro") to unlock the full workflow.
 
@@ -78,6 +78,7 @@ The free plugin handles a single agreement well. Additional Terms Pro is built f
 **Add every agreement your store needs**
 
 * Create **unlimited terms checkboxes**, a dedicated agreement for every policy, product line, or scenario.
+* Add a **fixed or percentage fee** when a customer accepts an "I agree" checkbox, with configurable tax settings. Fees can be used with required or optional agreements.
 * Show a checkbox on the **cart, the checkout, or both**.
 * Set **default checkbox states** for optional agreements.
 * Link a checkbox to **any post type**, not only standard WordPress pages.
@@ -91,6 +92,7 @@ The free plugin handles a single agreement well. Additional Terms Pro is built f
 * Match on cart totals and weight: **subtotal, total, discount total, shipping total, or cart weight**.
 * Match on the chosen **payment gateway, shipping location, or billing location**.
 * Match on **user role** or the **day of the week**.
+* Match on **Store Vacation status**, including current closure and checkout availability states.
 * Match on **URL parameters** from campaign, affiliate, or custom links.
 * **Copy conditions** from one checkbox to another so you never rebuild the same rules.
 * Use **Hidden Cart Matching** for custom checkout layouts where a theme or builder hides or changes products.
@@ -101,14 +103,16 @@ The free plugin handles a single agreement well. Additional Terms Pro is built f
 * Display the **accepted terms inside WooCommerce order emails**.
 * Attach a downloadable **PDF receipt** of the accepted terms to the confirmation email.
 * Record the **exact terms text, plus the customer's IP address and device**, at the moment of acceptance.
+* Keep any **charged fee details** with the acceptance record across admin and customer records, emails, PDF receipts, CSV exports, and order notes.
 
 **Set up faster and manage smarter**
 
 * Draft a structured Terms and Conditions document with the guided **Terms Generator**.
+* Use **Smart Tags** in Terms Text for dynamic terms page, checkbox, fee, site, and customer details.
 * **Import and export** your settings to move a configuration between stores.
 * Receive **premium updates and priority support** through WooCommerce.com.
 
-If your store needs multiple agreements, product-specific or payment-specific terms, conditional display, or clearer records of what customers accepted at checkout, [Additional Terms Pro](https://mypreview.one/additional-terms-pro-for-woocommerce/ "Additional Terms Pro") is the best upgrade path.
+If your store needs multiple agreements, product-specific or payment-specific terms, conditional display, agreement fees, or clearer records of what customers accepted at checkout, [Additional Terms Pro](https://mypreview.one/additional-terms-pro-for-woocommerce/ "Additional Terms Pro") is the best upgrade path.
 
 == Installation ==
 
@@ -179,7 +183,11 @@ The free version is designed for one additional checkout checkbox. Additional Te
 
 = Can I show different checkboxes for different products or customers? =
 
-Conditional display is available in Additional Terms Pro. It can show a checkbox based on products, categories, tags, WooCommerce brands, product types, shipping classes, applied coupons, cart totals, payment gateways, shipping or billing location, user role, weekday, or URL parameters.
+Conditional display is available in Additional Terms Pro. It can show a checkbox based on products, categories, tags, WooCommerce brands, product types, shipping classes, applied coupons, cart totals, payment gateways, shipping or billing location, user role, weekday, Store Vacation status, or URL parameters.
+
+= Can I add a fee to an Additional Terms checkbox? =
+
+Yes, in Additional Terms Pro. You can add a fixed or percentage fee when a customer accepts an "I agree" checkbox and configure how the fee is taxed. Fees can be used with required or optional agreements, and charged fee details are kept with the acceptance record.
 
 = Can I show terms only for specific payment methods? =
 
@@ -205,13 +213,13 @@ Yes. The plugin supports WooCommerce High-Performance Order Storage.
 
 The Lite version covers a single checkout agreement with a required or optional checkbox, a linked terms page, three display styles, and acceptance saved to the order notes. It is enough for a straightforward one-off policy.
 
-Additional Terms Pro adds unlimited checkboxes, cart and checkout placement, smart conditional display, accepted terms in emails, a PDF receipt, an order-screen acceptance summary, IP and device consent records, a guided Terms Generator, and import and export tools.
+Additional Terms Pro adds unlimited checkboxes, fixed or percentage agreement fees, cart and checkout placement, smart conditional display, Smart Tags, accepted terms in emails, PDF receipts, an order-screen acceptance summary, IP and device consent records, a guided Terms Generator, and import and export tools.
 
 If you need more than one agreement, product-specific or payment-specific terms, or clearer records of what customers accepted, Pro pays for itself quickly.
 
 = Does Additional Terms Lite for WooCommerce have a Pro version? =
 
-Yes. Additional Terms Pro adds unlimited checkboxes, smart conditional display, applied coupon and payment gateway rules, accepted terms in emails, PDF terms receipts, an order acceptance summary, a guided Terms Generator, and import and export support.
+Yes. Additional Terms Pro adds unlimited checkboxes, fixed or percentage agreement fees, smart conditional display, Smart Tags, applied coupon and payment gateway rules, Store Vacation conditions, accepted terms in emails, PDF terms receipts, an order acceptance summary, a guided Terms Generator, and import and export support.
 
 You can learn more here: [Additional Terms Pro](https://mypreview.one/additional-terms-pro-for-woocommerce/ "Additional Terms Pro")
 
@@ -240,6 +248,11 @@ If you enjoy using Additional Terms Lite for WooCommerce, a [5-star rating](http
 5. The additional terms checkbox on the WooCommerce Checkout Block.
 
 == Changelog ==
+= 1.7.3 =
+
+* Update - Compatibility with WP 7.1.
+* Update - Compatibility with WC 11.1.
+
 = 1.7.2.1 =
 
 * Fixed: Incorrect documentation page URL.

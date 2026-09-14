@@ -1,133 +1,175 @@
-*** Additional Terms for WooCommerce Changelog ***
-= 2026-06-08 - Version 1.7.2 =
-* Update - Compatibility with WP 7.0.
-* Update - Compatibility with WC 10.8.
+2026-09-14 - version 1.7.3
 
-= 2026-02-07 - Version 1.7.1 =
-* Fix - Improved compatibility with WooCommerce HPOS for order metadata storage.
-* Update - Compatibility with WP 6.9.
-* Update - Compatibility with WC 10.5.
+* Updated - Compatibility with WordPress 7.1.
+* Updated - Compatibility with WooCommerce 11.1.
 
-= 2025-08-19 - Version 1.7.0 =
-* Fix – Added support for translating settings fields
+2026-07-25 - version 1.7.2.1
 
-= 2025-07-21 - Version 1.6.9 =
-* Compatibility: WooCommerce 10.0
+* Fixed - Incorrect documentation page URL.
+* Compatibility - Tested with WooCommerce 10.9.
 
-= 2024-09-09 - Version 1.6.8.1 =
-* Fix - Renamed the plugin to comply with WooCommerce branding guidelines.
+2026-06-08 - version 1.7.2
 
-= 2024-09-02 - Version 1.6.8 =
-* Fix - Empty page terms content shown in Divi theme.
+* Updated - Compatibility with WordPress 7.0.
+* Updated - Compatibility with WooCommerce 10.8.
 
-= 2024-07-27 - Version 1.6.7 =
-* Update - Improved escaping of terms page content on the checkout shortcode.
-* Update - Compatibility with WordPress 6.6
-* Update - Compatibility with WooCommerce 9.2
+2026-02-07 - version 1.7.1
 
-= 2024-06-13 - Version 1.6.6 =
-* Update - Compatibility with WooCommerce 8.9.
+* Fixed - Improved compatibility with WooCommerce HPOS for order metadata storage.
+* Updated - Compatibility with WordPress 6.9.
+* Updated - Compatibility with WooCommerce 10.5.
 
-= 2024-04-09 - Version 1.6.5 =
-* Fix - Compatibility issues with WooCommerce checkout block.
-* Update - Compatibility with WordPress 6.5.
-* Update - Compatibility with WooCommerce 8.7.
+2025-08-19 - version 1.7.0
 
-= 2023-08-31 - Version 1.6.4 =
-* Update - Compatibility for rendering terms page content created with Elementor.
+* Fixed - Added support for translating settings fields.
 
-= 2023-08-23 - Version 1.6.3 =
-* Fix - Resolved the issue that prevented the assignment of non-published pages as terms pages.
-* Fix - Addressed a PHP error that occurred when retrieving order meta information for display on the order page.
+2025-07-21 - version 1.6.9
 
-= 2023-08-20 - Version 1.6.2 =
-* Fix - Isolated the dependency injection container package to prevent potential PHP fatal errors when utilized by other third-party plugins.
+* Updated - Compatibility with WooCommerce 10.0.
 
-= 2023-08-15 - Version 1.6.1 =
-* Fix - Prevented checkout error in the checkout block when additional terms & conditions are deactivated.
-* Update - Display of additional terms acceptance below the billing address.
-* Update - Compatibility with the "WooCommerce PayPal Payments" plugin.
-* Update - Compatibility with WordPress version 6.3.
-* Update - Compatibility with WooCommerce version 8.0.
+2024-09-09 - version 1.6.8.1
 
-= 2023-07-27 - Version 1.6.0 =
-* Added - Ability to define the status of the additional terms checkbox.
-* Added - Customization option to choose how the terms page is displayed (modal, embed, or new tab).
-* Added - New option to make the terms and conditions checkbox skippable.
-* Added - Save the acceptance of the additional terms in the order notes.
-* Update - Optimized the underlying code structure for better performance and maintainability.
+* Updated - Renamed the plugin to comply with WooCommerce branding guidelines.
 
-= 2023-04-07 - Version 1.5.2 =
-* Update - Compatibility with WordPress 6.2.
-* Update - Compatibility with WooCommerce 7.5.
+2024-09-02 - version 1.6.8
 
-= 2023-02-17 - Version 1.5.1 =
-* Updated font-size for the checkout block.
-* Update - Compatibility with WooCommerce 7.4.
+* Fixed - Empty terms page content shown when using the Divi theme.
 
-= 2023-01-28 - Version 1.5.0 =
-* Update - Compatibility with WooCommerce Checkout block.
-* Update - Compatibility with WooCommerce 7.3.
+2024-07-27 - version 1.6.7
 
-= 2023-01-05 - Version 1.4.1 =
-* Update - Improved logic in displaying admin notices.
+* Updated - Improved escaping of terms page content on the classic checkout.
+* Updated - Compatibility with WordPress 6.6.
+* Updated - Compatibility with WooCommerce 9.2.
 
-= 2022-12-13 - Version 1.4.0 =
-* Update - Compatibility with WooCommerce 7.2.
+2024-06-13 - version 1.6.6
 
-= 2022-11-08 - Version 1.3.6 =
-* Update - Compatibility with WordPress 6.1.
-* Update - Compatibility with WooCommerce 7.0.
+* Updated - Compatibility with WooCommerce 8.9.
 
-= 2022-09-18 - Version 1.3.5 =
-* Update - Compatibility with WordPress 6.0.
-* Update - Compatibility with WooCommerce 6.9.
+2024-04-09 - version 1.6.5
 
-= 2020-12-21 - Version 1.3.4 =
-* Update - Compatibility with WordPress 5.6.
-* Update - Compatibility with WooCommerce 4.8.
+* Fixed - Compatibility issues with the WooCommerce Checkout Block.
+* Updated - Compatibility with WordPress 6.5.
+* Updated - Compatibility with WooCommerce 8.7.
 
-= 2020-08-19 - Version 1.3.3 =
-* Fix - Multiple code standards improvements.
-* Update - Compatibility with WordPress 5.5.
-* Update - Compatibility with WooCommerce 4.4.
+2023-08-31 - version 1.6.4
 
-= 2020-08-07 - Version 1.3.2 =
-* Update - Compatibility with WooCommerce 4.3.
+* Updated - Added compatibility for terms page content created with Elementor.
 
-= 2020-06-15 - Version 1.3.1 =
-* Added - Display the acceptance of terms & conditions on the order edit page.
+2023-08-23 - version 1.6.3
 
-= 2020-06-11 - Version 1.3.0 =
-* Added - Additional terms content can now open up on the page when the link is clicked, allowing customers to review without leaving checkout.
-* Update - Compatibility with WooCommerce 4.2.0.
+* Fixed - Non-published pages could not be selected as terms pages.
+* Fixed - PHP error when retrieving order metadata for display on the order page.
 
-= 2020-05-22 - Version 1.2.2 =
-* Added - Language configuration file to support WPML/Polylang.
-* Update - Compatibility with WordPress 5.4.1.
-* Update - Compatibility with WooCommerce 4.1.1.
+2023-08-20 - version 1.6.2
 
-= 2020-04-02 - Version 1.2.1 =
-* Fix - Multiple code standards improvements.
-* Update - Compatibility with WordPress 5.4.0.
-* Update - Compatibility with WooCommerce 4.0.1.
+* Fixed - Isolated the dependency injection container package to prevent potential conflicts and PHP fatal errors with third-party plugins.
 
-= 2019-12-15 - Version 1.2.0 =
-* Fix - Refactored and re-organized underlying code in plugin settings page/controls.
-* Update - Language file.
-* Update - Compatibility with WordPress 5.3.1.
-* Update - Compatibility with WooCommerce 3.8.1.
+2023-08-15 - version 1.6.1
 
-= 2018-06-11 - Version 1.1.0 =
-* Update - Compatible with WordPress 4.9.6.
-* Update - Compatible with WooCommerce 3.4.2.
+* Fixed - Checkout error in the Checkout Block when Additional Terms was disabled.
+* Updated - Improved the display of Additional Terms acceptance below the billing address.
+* Updated - Compatibility with WooCommerce PayPal Payments.
+* Updated - Compatibility with WordPress 6.3.
+* Updated - Compatibility with WooCommerce 8.0.
 
-= 2016-12-08 - Version 1.0.2 =
-* Update - Compatible with WordPress 4.7.0.
-* Update - Compatible with WooCommerce 2.6.9.
+2023-07-27 - version 1.6.0
 
-= 2016-12-02 - Version 1.0.1 =
-* Added - Screenshots.
+* Added - Option to enable or disable the Additional Terms checkbox.
+* Added - Terms page display options for modal, embedded content, or a new tab.
+* Added - Option to make the Additional Terms checkbox optional.
+* Added - Additional Terms acceptance to WooCommerce order notes.
+* Updated - Refactored the underlying code for improved performance and maintainability.
 
-= 2016-12-02 - Version 1.0.0 =
+2023-04-07 - version 1.5.2
+
+* Updated - Compatibility with WordPress 6.2.
+* Updated - Compatibility with WooCommerce 7.5.
+
+2023-02-17 - version 1.5.1
+
+* Updated - Font size used by the Checkout Block.
+* Updated - Compatibility with WooCommerce 7.4.
+
+2023-01-28 - version 1.5.0
+
+* Added - Compatibility with the WooCommerce Checkout Block.
+* Updated - Compatibility with WooCommerce 7.3.
+
+2023-01-05 - version 1.4.1
+
+* Updated - Improved the logic used to display admin notices.
+
+2022-12-13 - version 1.4.0
+
+* Updated - Compatibility with WooCommerce 7.2.
+
+2022-11-08 - version 1.3.6
+
+* Updated - Compatibility with WordPress 6.1.
+* Updated - Compatibility with WooCommerce 7.0.
+
+2022-09-18 - version 1.3.5
+
+* Updated - Compatibility with WordPress 6.0.
+* Updated - Compatibility with WooCommerce 6.9.
+
+2020-12-21 - version 1.3.4
+
+* Updated - Compatibility with WordPress 5.6.
+* Updated - Compatibility with WooCommerce 4.8.
+
+2020-08-19 - version 1.3.3
+
+* Fixed - Multiple coding standards issues.
+* Updated - Compatibility with WordPress 5.5.
+* Updated - Compatibility with WooCommerce 4.4.
+
+2020-08-07 - version 1.3.2
+
+* Updated - Compatibility with WooCommerce 4.3.
+
+2020-06-15 - version 1.3.1
+
+* Added - Additional Terms acceptance to the order edit page.
+
+2020-06-11 - version 1.3.0
+
+* Added - Option to review the Additional Terms content without leaving checkout.
+* Updated - Compatibility with WooCommerce 4.2.
+
+2020-05-22 - version 1.2.2
+
+* Added - Language configuration file for WPML and Polylang.
+* Updated - Compatibility with WordPress 5.4.1.
+* Updated - Compatibility with WooCommerce 4.1.1.
+
+2020-04-02 - version 1.2.1
+
+* Fixed - Multiple coding standards issues.
+* Updated - Compatibility with WordPress 5.4.
+* Updated - Compatibility with WooCommerce 4.0.1.
+
+2019-12-15 - version 1.2.0
+
+* Fixed - Refactored and reorganized the plugin settings page and controls.
+* Updated - Language file.
+* Updated - Compatibility with WordPress 5.3.1.
+* Updated - Compatibility with WooCommerce 3.8.1.
+
+2018-06-11 - version 1.1.0
+
+* Updated - Compatibility with WordPress 4.9.6.
+* Updated - Compatibility with WooCommerce 3.4.2.
+
+2016-12-08 - version 1.0.2
+
+* Updated - Compatibility with WordPress 4.7.
+* Updated - Compatibility with WooCommerce 2.6.9.
+
+2016-12-02 - version 1.0.1
+
+* Added - Plugin screenshots.
+
+2016-12-02 - version 1.0.0
+
 * Initial release.
